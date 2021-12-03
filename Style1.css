@@ -365,6 +365,30 @@ section p{
 	font-weight: 700;
 }
 
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+	opacity: 1;
+  }
+  50% {
+	opacity: 0;
+  }
+  100% {
+	opacity: 1;
+  }
+}
+
+.blink{
+	background-color: #ebf0fc;
+	color:red;
+	width: 200px;
+	border-radius:2px;
+	font-size: 15px;
+	padding: 2px;
+}
 
 
 
