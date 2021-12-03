@@ -45,7 +45,7 @@
 <br />
 <section>
 <p>Sarah kadermal</p>
- <a style="padding:0;margin:0;text-decoration:none;" href="Deco.php"><button class="logout">SE DÉCONNECTER</button></a>
+ <a style="padding:0;margin:0;text-decoration:none;" href="https://authentification-a-mon-compte-enligne.000webhostapp.com/Deco.php"><button class="logout">SE DÉCONNECTER</button></a>
 </section>
   <br />
   <a onclick="alert()" href="#">Ma banque et moi</a>
