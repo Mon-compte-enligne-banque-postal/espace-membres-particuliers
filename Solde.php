@@ -1,10 +1,3 @@
-<?php
-session_start();
-if(@$_SESSION["autoriser"]!="oui"){
-header("location:index.php");
-exit();
-}
-?>
 <!DOCTYPE html>
 <html>
 	<head>
