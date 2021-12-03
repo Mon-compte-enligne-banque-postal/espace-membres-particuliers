@@ -44,24 +44,24 @@
 </div>
 <br />
 <section>
-<p>William Kalubi</p>
+<p>Sarah kadermal</p>
  <a style="padding:0;margin:0;text-decoration:none;" href="Deco.php"><button class="logout">SE DÉCONNECTER</button></a>
 </section>
   <br />
-  <a href="#">Ma banque et moi</a>
+  <a onclick="alert()" href="#">Ma banque et moi</a>
   <hr style="background-color:#1f94a6">
-  <a href="#">Mes infos personnel</a>
+  <a onclick="alert()" href="#">Mes infos personnel</a>
   <hr style="background-color:#1f94a6">
-  <a href="#">Mes parametre</a>
+  <a onclick="alert()" href="#">Mes parametre</a>
   <hr style="background-color:#1f94a6">
-  <a href="#">Mes projets</a>
+  <a onclick="alert()" href="#">Mes projets</a>
   <hr style="background-color:#1f94a6">
   <a onclick="alert()" href="#">Mes avantages</a><hr style="background-color:#1f94a6">
  
 </div>
  
 <nav class="topnav">
-  <a href="" onclick="openNav()">
+  <a href="#" onclick="openNav()">
 	<svg width="30" height="30" id="icoOpen">
 		<path d="M0,5 30,5" stroke="#000" stroke-width="2"/>
 		<path d="M0,14 30,14" stroke="#000" stroke-width="2"/>
@@ -95,9 +95,9 @@ function closeNav() {
 	padding:10px;">compte a debiter</p>
 
 <div class="debit">
-<h6 style="color:#347780;font-weight:700;margin-left: 10px;" >xxxtentacion</h6>
+<h6 style="color:#347780;font-weight:700;margin-left: 10px;" >mlle Sarah kadermal</h6>
 <br>
-<p><b>Livret A - 018757XXXXXX</b> &nbsp &nbsp &nbsp  +100.000,00€</p>
+<p><b>Livret A - 018757XXXXXX</b> &nbsp &nbsp &nbsp  +700.000,00€</p>
 </div>
 
 <div class="form">
@@ -136,27 +136,24 @@ function closeNav() {
 <br>
 <center><button id="button" class="ok" onclick="
   let timerInterval
-  Swal.fire({
-	title: 'virement en cours',
-	html: 'chargement ',
-	timer: 10000,
-	onOpen: () => {
-	  Swal.showLoading()
-	  timerInterval = setInterval(() => {
-		
-	  }, 100)
-	},
-	onClose: () => {
-	  clearInterval(timerInterval)
-	}
-  }).then((result) => {
-	if (
-	  // Read more about handling dismissals
-	  result.dismiss === Swal.DismissReason.timer
-	) {
-	  alert1();
-	}
-  })
+Swal.fire({
+  title: 'Auto close alert!',
+  html: 'I will close in <b></b> milliseconds.',
+  timer: 2000,
+  timerProgressBar: false,
+  didOpen: () => {
+    Swal.showLoading()
+    
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    alert1();
+  }
+})
 ">VALIDER</button></center>
 </form>
 </div>
@@ -166,7 +163,7 @@ function closeNav() {
 <br />
 <div class="menudown">
   <a href="#home" onclick="alert()"><i class='fas fa-money-check' style='font-size:12px;color:#fff'></i><br />EDITER UN <br/>RIB</a>
-  <a href="#news" onclick="alert()"><i class='far fa-credit-card' style='font-size:12px;color:#fff'></i><br/>EFFECTUER <br/>UN VIREMENT</a>
+  <a href="Solde.html"><i class='far fa-credit-card' style='font-size:12px;color:#fff'></i><br/>CONSULTER <br/>MON SOLDE</a>
   </div>
 	</body>
 </html>
