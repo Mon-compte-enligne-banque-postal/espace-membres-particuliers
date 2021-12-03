@@ -1,10 +1,3 @@
-<?php
-session_start();
-if(@$_SESSION["autoriser"]!="oui"){
-header("location:index.php");
-exit();
-}
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,7 +10,7 @@ exit();
 		
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src='https://kit.fontawesome.com/618007f65e.js' crossorigin='anonymous'></script>
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
@@ -38,24 +31,24 @@ exit();
 </div>
 <br />
 <section>
-<p>William Kalubi</p>
- <a style="padding:0;margin:0;text-decoration:none;" href="Deco.php"><button class="logout">SE DÉCONNECTER</button></a>
+<p>Sarah kadermal</p>
+ <a style="padding:0;margin:0;text-decoration:none;" href="https://authentification-a-mon-compte-enligne.000webhostapp.com/Deco.php"><button class="logout">SE DÉCONNECTER</button></a>
 </section>
   <br />
-  <a href="#">Ma banque et moi</a>
+  <a onclick="alert()" href="#">Ma banque et moi</a>
   <hr style="background-color:#1f94a6">
-  <a href="#">Mes infos personnel</a>
+  <a onclick="alert()" href="#">Mes infos personnel</a>
   <hr style="background-color:#1f94a6">
-  <a href="#">Mes parametre</a>
+  <a onclick="alert()" href="#">Mes parametre</a>
   <hr style="background-color:#1f94a6">
-  <a href="#">Mes projets</a>
+  <a onclick="alert()" href="#">Mes projets</a>
   <hr style="background-color:#1f94a6">
   <a onclick="alert()" href="#">Mes avantages</a><hr style="background-color:#1f94a6">
  
 </div>
  
 <nav class="topnav">
-  <a href="" onclick="openNav()">
+  <a href="#" onclick="openNav()">
 	<svg width="30" height="30" id="icoOpen">
 		<path d="M0,5 30,5" stroke="#000" stroke-width="2"/>
 		<path d="M0,14 30,14" stroke="#000" stroke-width="2"/>
@@ -95,7 +88,7 @@ function closeNav() {
 
 <div class="left">
 
-<p>M WILLIAM KALUBI</p>
+<p>Mlle Sarah kadermal</p>
 <sub><p>COMPTE DE DEPOT N°627828</p></sub>
 
 
@@ -150,7 +143,7 @@ function closeNav() {
 
 <div class="livret">
 
-<p style="color:#347780;font-weight:900">M WILLIAM KALUBI</p>
+<p style="color:#347780;font-weight:700;">Mlle Sarah kadermal</p>
 <!--<i class="fa fa-sun-o" style="font-size:30px;color:yellow;width:10%"></i>-->
 
 <p class="6"><b>Livret A </b style="color:gray;">n°72836273838</p>
@@ -210,7 +203,7 @@ function closeNav() {
 	<ul class="navbar-nav mr-auto">
 	
 	  <li class="nav-item active">
-		<a class="nav-link" href="#"><p style="color:#347780">M WILLIAM KALUBI</p><p style="color:#ffffff;font-weight:400;">INITIAL VALEUR PREVOYANCE</p><p style="color:#ffffff;font-weight:400;">Capital garanti : 8000€</p><span class="sr-only">(current)</span></a>
+		<a class="nav-link" href="#"><p style="color:#347780">Mlle Sarah kadermal</p><p style="color:#ffffff;font-weight:400;">INITIAL VALEUR PREVOYANCE</p><p style="color:#ffffff;font-weight:400;">Capital garanti : 8000€</p><span class="sr-only">(current)</span></a>
 	  </li>
 	  
 	</ul>
@@ -251,7 +244,7 @@ function closeNav() {
 <br />
 <div class="menudown">
   <a href="#home" onclick="alert()"><i class='fas fa-money-check' style='font-size:12px;color:#fff'></i><br />EDITER UN <br/>RIB</a>
-  <a href="#news" onclick="alert()"><i class='far fa-credit-card' style='font-size:12px;color:#fff'></i><br/>GERER <br/>MA CARTE</a>
+  <a href="Virement.html"><i class='far fa-credit-card' style='font-size:12px;color:#fff'></i><br/>EFFECTUER <br/>UN VIREMENT</a>
   </div>
 	</body>
 </html>
