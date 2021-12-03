@@ -1,7 +1,7 @@
 body {
 	width: 100%;
 	padding: 0;
-	background-color: darkblue;
+	background-color: #4257f5;
 }
 .body{
 	background-color: #fff;
@@ -13,7 +13,7 @@ img{
 }
 label{
 	
-	color: darkblue;
+	color: #4257f5;
 	font-weight: 700;
 }
 
@@ -34,7 +34,7 @@ input:active{
 }
 
 button{
-	background-color: darkblue;
+	background-color: #4257f5;
 	border-radius:100em;
 	color: white;
 	margin-bottom: 40px;
